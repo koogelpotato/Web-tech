@@ -1,0 +1,50 @@
+.user-name {
+    display: flex;
+    position: absolute;
+    top: 45%; /* Adjust the value to your desired position */
+    left: 51%;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(5, 212, 5);
+    transform: translate(-60%, -45%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.button-bar{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.task-button:active{
+    background-color: cyan;
+}
+
+.task-button:hover{
+    background-color: lightblue;
+    opacity: 0.9;
+}
+
+.task-button{
+    color: green;
+  background-color: aqua;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+
+body{
+    background-image: url("/images/tux.png");
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #000000;
+}
