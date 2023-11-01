@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task1</title>
+    <title>Module</title>
+    <link rel="stylesheet" href="/styles/task1_style.css">
+    <script>
+        function Module() {
+            var g = document.getElementById("G").value;
+            var pr = document.getElementById("Private").value;
+            document.getElementById("Private_2").value = pr;
+            var p = document.getElementById("P").value;
+            var y = (Math.pow(g, pr)) % p;
+            document.getElementById("A").value = y;
+            document.getElementById("G0_2").value = y;
+        }
+
+        function Module0() {
+            var g = document.getElementById("G0").value;
+            var pr = document.getElementById("Private0").value;
+            document.getElementById("Private0_2").value = pr;
+            var p = document.getElementById("P0").value;
+            var y = (Math.pow(g, pr)) % p;
+            document.getElementById("A0").value = y;
+            document.getElementById("G_2").value = y;
+        }
+
+        function Module_2() {
+            var g = document.getElementById("G_2").value;
+            var pr = document.getElementById("Private_2").value;
+            var p = document.getElementById("P_2").value;
+            var y = (Math.pow(g, pr)) % p;
+            document.getElementById("A_2").value = y;
+        }
+
+        function Module0_2() {
+            var g = document.getElementById("G0_2").value;
+            var pr = document.getElementById("Private0_2").value;
+            var p = document.getElementById("P0_2").value;
+            var y = (Math.pow(g, pr)) % p;
+            document.getElementById("A0_2").value = y;
+        }
+    </script>
 </head>
 <body>
-    
+    <h1>Module</h1>
+    <label for="G">G:</label>
+    <input type="text" id="G" /><br />
+    <label for="Private">Private:</label>
+    <input type="text" id="Private" /><br />
+    <label for="Private_2">Private_2:</label>
+    <input type="text" id="Private_2" readonly /><br />
+    <label for="P">P:</label>
+    <input type="text" id="P" /><br />
+    <label for="A">A:</label>
+    <input type="text" id="A" readonly /><br />
+    <label for="G0_2">G0_2:</label>
+    <input type="text" id="G0_2" readonly /><br />
+
+    <button onclick="Module()">Calculate Module</button>
+
+    <h1>Module0</h1>
+    <label for="G0">G0:</label>
+    <input type="text" id="G0" /><br />
+    <label for="Private0">Private0:</label>
+    <input type="text" id="Private0" /><br />
+    <label for="Private0_2">Private0_2:</label>
+    <input type="text" id="Private0_2" readonly /><br />
+    <label for="P0">P0:</label>
+    <input type="text" id="P0" /><br />
+    <label for="A0">A0:</label>
+    <input type="text" id="A0" readonly /><br />
+    <label for="G_2">G_2:</label>
+    <input type="text" id="G_2" readonly /><br />
+
+    <button onclick="Module0()">Calculate Module0</button>
+
+    <h1>Module_2</h1>
+    <label for="G_2">G_2:</label>
+    <input type="text" id="G_2" /><br />
+    <label for="Private_2">Private_2:</label>
+    <input type="text" id="Private_2" /><br />
+    <label for="P_2">P_2:</label>
+    <input type="text" id="P_2" /><br />
+    <label for="A_2">A_2:</label>
+    <input type="text" id="A_2" readonly /><br />
+
+    <button onclick="Module_2()">Calculate Module_2</button>
+
+    <h1>Module0_2</h1>
+    <label for="G0_2">G0_2:</label>
+    <input type="text" id="G0_2" /><br />
+    <label for="Private0_2">Private0_2:</label>
+    <input type="text" id="Private0_2" /><br />
+    <label for="P0_2">P0_2">P0_2:</label>
+    <input type="text" id="P0_2" /><br />
+    <label for="A0_2">A0_2:</label>
+    <input type="text" id="A0_2" readonly /><br />
+
+    <button onclick="Module0_2()">Calculate Module0_2</button>
 </body>
 </html>

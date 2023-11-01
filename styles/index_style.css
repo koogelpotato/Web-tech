@@ -1,50 +1,58 @@
-.user-name {
+:root {
+    --main-bg-color: #000000;
+    --main-font: 'Courier New', Courier, monospace;
+    --main-color: rgb(5, 212, 5);
+    --button-color: aqua;
+    --button-hover-color: lightblue;
+    --button-active-color: cyan;
+   }
+   
+   body {
+    background: url("/images/tux.png") center center no-repeat fixed;
+    background-size: contain;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 1rem;
+   }
+   
+   .user-name {
+    position: relative;
     display: flex;
-    position: absolute;
-    top: 45%; /* Adjust the value to your desired position */
-    left: 51%;
-    max-width: 80%;
-    margin: 0 auto;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(5, 212, 5);
-    transform: translate(-60%, -45%);
     justify-content: center;
     align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: var(--main-color);
     text-align: center;
-  }
-
-.button-bar{
+ }
+   
+   .button-bar{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
     gap: 10px; 
-}
-
-.task-button:active{
-    background-color: cyan;
-}
-
-.task-button:hover{
-    background-color: lightblue;
-    opacity: 0.9;
-}
-
-.task-button{
+   }
+   
+   .task-button {
     color: green;
-  background-color: aqua;
-  border: none;
-  padding: 10px 20px;
-  font-family: 'Courier New', Courier, monospace;
-  cursor: pointer;
-}
-
-body{
-    background-image: url("/images/tux.png");
-    background-position: center center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-color: #000000;
-}
+    background-color: var(--button-color);
+    border: none;
+    padding: 10px 20px;
+    font-family: var(--main-font);
+    cursor: pointer;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+   }
+   
+   .task-button:hover {
+    background-color: var(--button-hover-color);
+    opacity: 0.9;
+   }
+   
+   .task-button:active {
+    background-color: var(--button-active-color);
+   }
