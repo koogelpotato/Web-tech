@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+ 
+ h1 {
+    color: #333;
+    font-size: 2em;
+ }
+ 
+ p {
+    color: #666;
+    font-size: 1em;
+ }
+ 
+ asp\:Label, asp\:TextBox {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+ 
+ asp\:Button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+ }
+ 
+ asp\:Button[id$='1'] {
+    background-color: #007BFF;
+    color: white;
+ }
+ 
+ asp\:Button[id$='2'] {
+    background-color: #28a745;
+    color: white;
+ }
+ 
+ asp\:Button:hover {
+    opacity: 0.8;
+ }
+ 

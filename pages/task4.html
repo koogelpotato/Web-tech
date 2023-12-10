@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="../styles/task4_style.css">
+</head>
+<body>
+    <script src="../executable_code/task4.js"></script>
+    <body>
+        <p>
+            <b>API Национального банка для получения официального курса белорусского рубля по отношению
+                к иностранным валютам. Пример использования.</b></p>
+        <select id="mode">
+            <option value="0">справочник валют</option>
+            <option value="1">описание валюты</option>
+            <option value="2">курс валюты на дату</option>
+            <option value="10">курс валюты на дату по цифровому коду валюты (ИСО 4217)</option>
+            <option value="11">курс валюты на дату по буквенному коду валюты (ИСО 4217)</option>
+            <option value="6">курс валюты на сегодня</option>
+            <option value="8">курс валюты на сегодня по цифровому коду валюты (ИСО 4217)</option>
+            <option value="9">курс валюты на сегодня по буквенному коду валюты (ИСО 4217)</option>
+            <option value="3">курс валюты за период</option>
+            <option value="4">все курсы, устанавливаемые ежедневно на дату</option>
+            <option value="7">все курсы, устанавливаемые ежедневно на сегодня</option>
+            <option value="5">все курсы, устанавливаемые ежемесячно</option>
+        </select>
+        <span id="onDate" style="display: none">На дату: <input type="text" id="iDate" /></span> 
+        <span id="Cur" style="display: none">Cur_ID валюты: <input type="text" id="iCur" /></span> 
+        <span id="period" style="display: none">с: <input type="text" id="ifrom" /> по: <input type="text" id="ito" /></span>
+        <input type="button" id="btn" value="получить" />
+        <ul id="res">
+        </ul>
+    </body>
+</body>
