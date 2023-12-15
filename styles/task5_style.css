@@ -1,0 +1,34 @@
+body {
+ background-color: #f0f0f0;
+ font-family: Arial, sans-serif;
+ font-size: 16px;
+}
+
+#startButton {
+ background-color: #4CAF50;
+ color: white;
+ font-size: 18px;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ cursor: pointer;
+}
+
+dl {
+ margin-bottom: 20px;
+ font-size: 20px;
+ font-weight: bold;
+}
+
+#urls {
+ margin-bottom: 20px;
+ padding: 20px;
+ border: 1px solid #ddd;
+}
+   
+#counter {
+ font-size: 20px;
+ font-weight: bold;
+}
+   
